@@ -1,0 +1,108 @@
+body {
+  background-color: #f9fafc;
+  font-family: "Open Sans";
+}
+nav {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+}
+.company_name {
+  width: 50%;
+  position: absolute;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  }
+.right_nav {
+  width: 50%;
+  position: absolute;
+  right: 0;
+}
+.links {
+  display: inline-block;
+  margin: 15px;
+  color: #696969;
+  text-decoration: none;
+  font-weight: 600;
+}
+.hire_us {
+  width: 15%;
+  background-color: #000;
+  border-radius: 55px;
+  color: #f9fafc;
+  padding: 15px;
+  text-align: center;
+}
+main {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+}
+.company_text {
+  width: 50%;
+  position: absolute;
+  left: 0;
+  margin-top: 5%;
+  font-size: 20px;
+  font-weight: 600;
+}
+.company_description {
+  margin: 0;
+  color: #696969;
+  font-weight: 400;
+  font-size: 20px;
+  padding: 10px;
+  border-left-width: 3px;
+  border-left-color: lightgray;
+  border-left-style: solid
+}
+.circles {
+  width: 50%;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  margin-top: 5%;
+}
+.circle_container {
+  position: relative;
+}
+.pinkish {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  background-color: rgba(247, 136, 167, 0.6);
+  position: absolute;
+}
+.purpleish {
+  height: 125px;
+  width: 125px;
+  border-radius: 50%;
+  background-color: rgba(207, 130, 213, 0.6);
+  position: absolute;
+  left: 270px;
+  top: 90px;
+}
+.pale_orange {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: rgba(247, 193, 162, 0.7);
+  position: absolute;
+  top: 185px;
+  left: 190px;
+}
+footer {
+  position: relative;
+}
+.scroll_down {
+  position: fixed;
+  left: 40%;
+  bottom: 20%;
+  background-color: #000;
+  border-radius: 25px;
+  color: #f9fafc;
+  padding: 15px;
+  font-size:15px; 
+  text-decoration: none;
+}
