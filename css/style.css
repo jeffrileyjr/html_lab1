@@ -13,7 +13,8 @@ nav {
   text-decoration: none;
   color: #000;
   font-weight: 600;
-  }
+  margin-top: 5px;
+ }
 .right_nav {
   width: 50%;
   position: absolute;
@@ -21,7 +22,7 @@ nav {
 }
 .links {
   display: inline-block;
-  margin: 15px;
+  margin: 0px 15px;
   color: #696969;
   text-decoration: none;
   font-weight: 600;
@@ -67,26 +68,26 @@ main {
 .circle_container {
   position: relative;
 }
-.pinkish {
+.pink, .purple, .peach {
+  border-radius: 50%;
+}
+.pink {
   height: 300px;
   width: 300px;
-  border-radius: 50%;
   background-color: rgba(247, 136, 167, 0.6);
   position: absolute;
 }
-.purpleish {
+.purple {
   height: 125px;
   width: 125px;
-  border-radius: 50%;
   background-color: rgba(207, 130, 213, 0.6);
   position: absolute;
   left: 270px;
   top: 90px;
 }
-.pale_orange {
+.peach {
   height: 200px;
   width: 200px;
-  border-radius: 50%;
   background-color: rgba(247, 193, 162, 0.7);
   position: absolute;
   top: 185px;
