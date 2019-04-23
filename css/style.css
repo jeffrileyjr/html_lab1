@@ -27,13 +27,15 @@ nav {
   text-decoration: none;
   font-weight: 600;
 }
-.hire_us {
-  width: 15%;
+.hire_us, .scroll_down {
+  width: 100px;
   background-color: #000;
   border-radius: 55px;
   color: #f9fafc;
   padding: 15px;
   text-align: center;
+  text-decoration: none;
+  font-size: 15px;
 }
 main {
   width: 100%;
@@ -76,7 +78,7 @@ main {
   width: 275px;
   background-color: rgba(247, 136, 167, 0.6);
   position: absolute;
-  right: 200px;
+  right: 250px;
   top: 50px;
 }
 .purple {
@@ -84,7 +86,7 @@ main {
   width: 150px;
   background-color: rgba(207, 130, 213, 0.6);
   position: absolute;
-  right: 100px;
+  right: 150px;
   top: 80px;
 }
 .peach {
@@ -93,7 +95,7 @@ main {
   background-color: rgba(247, 193, 162, 0.7);
   position: absolute;
   top: 185px;
-  right: 100px;
+  right: 150px;
 }
 footer {
   position: relative;
@@ -102,10 +104,4 @@ footer {
   position: fixed;
   left: 40%;
   bottom: 20%;
-  background-color: #000;
-  border-radius: 25px;
-  color: #f9fafc;
-  padding: 15px;
-  font-size:15px; 
-  text-decoration: none;
 }
