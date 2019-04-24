@@ -1,107 +1,114 @@
 body {
-  background-color: #f9fafc;
+  margin-left: 1em;
+  padding: 0;
   font-family: "Open Sans";
+  background-color: #f9fafc;
+}
+header {
+  font-size: 1.25em;
+}
+.brand {
+  font-weight: 600;
 }
 nav {
-  width: 100vw;
-  position: relative;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
 }
-.company_name {
-  width: 50%;
-  position: absolute;
-  text-decoration: none;
-  color: #000;
-  font-weight: 600;
-  margin-top: 5px;
- }
-.right_nav {
-  width: 50%;
-  position: absolute;
-  right: 0;
-}
-.links {
-  display: inline-block;
-  margin: 0px 15px;
+a {
   color: #696969;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
+  padding: 5px;
 }
-.hire_us, .scroll_down {
-  width: 100px;
+.btn {
+  width: 90%;
   background-color: #000;
   border-radius: 55px;
   color: #f9fafc;
-  padding: 15px;
   text-align: center;
-  text-decoration: none;
-  font-size: 15px;
 }
-main {
-  width: 100%;
-  display: inline-block;
-  position: relative;
-}
-.company_text {
-  width: 50%;
-  position: absolute;
-  left: 0;
-  margin-top: 5%;
-  font-size: 20px;
+section>p:first-child {
+  font-size: 30px;
   font-weight: 600;
 }
-.company_description {
-  margin: 0;
+section>p:nth-child(2) {
+  border-left: 5px solid #696969;
+  padding-left: 15px;
   color: #696969;
-  font-weight: 400;
-  font-size: 20px;
+}
+button {
   padding: 10px;
-  border-left-width: 3px;
-  border-left-color: lightgray;
-  border-left-style: solid
+  font-size: 1.25em;
 }
-.circles {
-  width: 50%;
-  display: inline-block;
-  position: absolute;
-  right: 90px;
-  margin-top: 5%;
-}
-.circle_container {
-  position: relative;
-}
-.pink, .purple, .peach {
-  border-radius: 50%;
-}
-.pink {
-  height: 275px;
-  width: 275px;
-  background-color: rgba(247, 136, 167, 0.6);
-  position: absolute;
-  right: 250px;
-  top: 50px;
-}
-.purple {
-  height: 150px;
-  width: 150px;
-  background-color: rgba(207, 130, 213, 0.6);
-  position: absolute;
-  right: 150px;
-  top: 80px;
-}
-.peach {
-  height: 200px;
-  width: 200px;
-  background-color: rgba(247, 193, 162, 0.7);
-  position: absolute;
-  top: 185px;
-  right: 150px;
-}
-footer {
-  position: relative;
-}
-.scroll_down {
-  position: fixed;
-  left: 40%;
-  bottom: 20%;
+
+@media only screen and (min-width:1024px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    padding: 20px;
+  }
+  .brand {
+    margin-top: 0;
+    flex: 1;
+  }
+  nav {
+   flex-direction: row;
+   display: inline;
+  }
+  a.btn {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  main {
+    display: flex;
+    padding: 20px;
+    margin-left: 0;
+  }
+  .left {
+    width: 60%;
+  }
+  .right {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    
+  }
+  div {
+    border-radius: 50%;
+  }
+  div:nth-child(1) {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    background-color: rgba(247, 136, 167, 0.6);
+    top: 65px;
+    left: 90px;
+  }
+  div:nth-child(2) {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    background-color: rgba(207, 130, 213, 0.6);
+    right: 0;
+    top: 100px;
+
+  }
+  div:nth-child(3) {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background-color: rgba(247, 193, 162, 0.7);
+    right: 0;
+    top: 200px;
+  }
+  button.btn {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-left: 30px;
+    padding-right: 30px;
+    width: auto;
+  }
+ 
 }
