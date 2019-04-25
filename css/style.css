@@ -5,9 +5,10 @@ body {
   background-color: #f9fafc;
 }
 header {
-  font-size: 1.25em;
+  font-size: 15px;
 }
 .brand {
+  margin-left: 5px;
   font-weight: 600;
 }
 nav {
@@ -35,10 +36,87 @@ section>p:nth-child(2) {
   border-left: 5px solid #696969;
   padding-left: 15px;
   color: #696969;
+  font-size: 15px;
 }
 button {
   padding: 10px;
-  font-size: 1.25em;
+  font-size: 1em;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    padding: 20px;
+  }
+  .brand {
+    margin-top: 0;
+    flex: 1;
+  }
+  nav {
+   flex-direction: row;
+   display: inline;
+  }
+  a.btn {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  main {
+    display: flex;
+    padding: 20px;
+    margin-left: 0;
+  }
+  section>p:first-child {
+    font-size: 20px;
+  }
+  .left {
+    width: 60%;
+    font-size: 13px;
+  }
+  .right {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    
+  }
+  div {
+    border-radius: 50%;
+  }
+  div:nth-child(1) {
+    position: absolute;
+    height: 225px;
+    width: 225px;
+    background-color: rgba(247, 136, 167, 0.6);
+    top: 65px;
+    left: 90px;
+  }
+  div:nth-child(2) {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: rgba(207, 130, 213, 0.6);
+    right: 0;
+    top: 130px;
+
+  }
+  div:nth-child(3) {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    background-color: rgba(247, 193, 162, 0.7);
+    right: 0;
+    top: 200px;
+  }
+  button.btn {
+    position: relative;
+    font-size: 13px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-left: 30px;
+    padding-right: 30px;
+    width: auto;
+  }
 }
 
 @media only screen and (min-width:1024px) {
@@ -72,35 +150,34 @@ button {
     width: 500px;
     height: 500px;
     position: relative;
-    
   }
   div {
     border-radius: 50%;
   }
   div:nth-child(1) {
     position: absolute;
-    height: 300px;
-    width: 300px;
+    height: 275px;
+    width: 275px;
     background-color: rgba(247, 136, 167, 0.6);
     top: 65px;
     left: 90px;
   }
   div:nth-child(2) {
     position: absolute;
-    height: 150px;
-    width: 150px;
+    height: 125px;
+    width: 125px;
     background-color: rgba(207, 130, 213, 0.6);
     right: 0;
-    top: 100px;
+    top: 150px;
 
   }
   div:nth-child(3) {
     position: absolute;
-    height: 200px;
-    width: 200px;
+    height: 175px;
+    width: 175px;
     background-color: rgba(247, 193, 162, 0.7);
     right: 0;
-    top: 200px;
+    top: 250px;
   }
   button.btn {
     position: relative;
